@@ -26,6 +26,52 @@ $ yarn
 $ yarn build
 ```
 
+빌드 시 다음과 같이 모든 tasks가 성공되지 않을 수 있다. 
+
+`무시해도 된다.`
+
+packages는 정상적으로 빌드가 되었으므로 추후 진행하는데 있어서 영향을 받지 않는다.
+
+```
+@farcaster/hubble:build: error Command failed with exit code 101.
+@farcaster/hubble:build: info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+@farcaster/hubble:build: error Command failed with exit code 101.
+@farcaster/hubble:build: info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+@farcaster/hubble:build: error Command failed with exit code 101.
+@farcaster/hubble:build: info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+@farcaster/hubble:build: ERROR: command finished with error: command (/Users/jeongtaepark/Desktop/development/hub-monorepo/apps/hubble) yarn run build exited (101)
+command (/Users/jeongtaepark/Desktop/development/hub-monorepo/apps/hubble) yarn run build exited (101)
+
+ Tasks:    4 successful, 5 total
+Cached:    0 cached, 5 total
+  Time:    22.347s
+Failed:    @farcaster/hubble#build
+
+ ERROR  run failed: command  exited (101)
+error Command failed with exit code 101.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+```
+
+```
+@farcaster/hubble:build: error Command failed with exit code 101.
+@farcaster/hubble:build: info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+@farcaster/hubble:build: error Command failed with exit code 101.
+@farcaster/hubble:build: info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+@farcaster/hubble:build: error Command failed with exit code 101.
+@farcaster/hubble:build: info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+@farcaster/hubble:build: ERROR: command finished with error: command (/Users/jeongtaepark/Desktop/development/hub-monorepo/apps/hubble) yarn run build exited (101)
+command (/Users/jeongtaepark/Desktop/development/hub-monorepo/apps/hubble) yarn run build exited (101)
+
+ Tasks:    4 successful, 5 total
+Cached:    3 cached, 5 total
+  Time:    3.544s
+Failed:    @farcaster/hubble#build
+
+ ERROR  run failed: command  exited (101)
+error Command failed with exit code 101.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+```
+
 * replicator build
 
 ```bash
