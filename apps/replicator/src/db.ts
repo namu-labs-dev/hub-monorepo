@@ -346,6 +346,7 @@ export type VerificationRow = {
   signerAddress: Uint8Array;
   blockHash: Uint8Array;
   signature: Uint8Array;
+  protocol: Protocol;
 };
 
 // USER DATA --------------------------------------------------------------------------------------
